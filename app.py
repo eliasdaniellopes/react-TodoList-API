@@ -21,6 +21,7 @@ class Todo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(400), unique=False)
 
+    
     def __init__(self, title):
         self.title = title
 class TodosSchema(ma.Schema):

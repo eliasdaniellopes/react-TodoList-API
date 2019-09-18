@@ -30,6 +30,7 @@ class TodosSchema(ma.Schema):
 todo_schema = TodosSchema()
 todos_schema = TodosSchema(many=True)
 
+#just testing
 @app.route('/add', methods=['POST'])
 @cross_origin()
 def add_todo():
